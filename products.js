@@ -8,7 +8,7 @@ const PRODUCTS = [
     oldPrice: 79.90,
     price: 39.90,
     emoji: "💄",
-    link: "https://exemplo.com/cole-seu-link-1",
+    link: "https://s.shopee.com.br/3LPaQbsD82",
     featured: 10
   },
   {
