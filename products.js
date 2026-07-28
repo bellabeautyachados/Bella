@@ -14,9 +14,6 @@ const PRODUCTS = [
   {
     id: 2,
     name: "Escova secadora 3 em 1",
-  {
-    id: 2,
-    name: "Escova secadora 3 em 1",
     category: "Beleza",
     store: "TikTok Shop",
     description: "Seca, alisa e modela o cabelo com praticidade.",
