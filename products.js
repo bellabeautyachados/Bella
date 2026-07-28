@@ -1,16 +1,19 @@
 const PRODUCTS = [
   {
     id: 1,
-    name: "Organizador de maquiagem giratório",
+    name: "Base Boca Rosa Beauty",
     category: "Beleza",
     store: "Shopee",
-    description: "Organiza pincéis, cremes e maquiagem sem ocupar muito espaço.",
-    oldPrice: 79.90,
-    price: 39.90,
-    emoji: "💄",
-    link: "https://s.shopee.com.br/3LPaQbsD82",
+    description: "Base de alta cobertura e longa duração.",
+    oldPrice: 89.90,
+    price: 59.90,
+    image: "images/base-boca-rosa.png",
+    link: "COLE_AQUI_SEU_LINK_DE_AFILIADA",
     featured: 10
   },
+  {
+    id: 2,
+    name: "Escova secadora 3 em 1",
   {
     id: 2,
     name: "Escova secadora 3 em 1",
