@@ -146,3 +146,18 @@ select{border:1px solid var(--border);background:#fff;border-radius:10px;padding
 .product-emoji{
   font-size:70px;
 }
+.shopee-store-btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 22px;
+  background:#ee4d2d;
+  color:#fff;
+  text-decoration:none;
+  border-radius:14px;
+  font-weight:bold;
+  box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+.shopee-store-btn:hover{
+  opacity:.9;
+}
