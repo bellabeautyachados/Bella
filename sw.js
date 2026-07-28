@@ -1,4 +1,4 @@
-const CACHE = "bella-v12";
+const CACHE = "bella-v13";
 
 const FILES = [
   "./",
