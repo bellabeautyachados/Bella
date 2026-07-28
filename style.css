@@ -143,3 +143,6 @@ select{border:1px solid var(--border);background:#fff;border-radius:10px;padding
   height:100%;
   object-fit:cover;
 }
+.product-emoji{
+  font-size:70px;
+}
