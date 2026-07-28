@@ -1,0 +1,17 @@
+{
+  "name": "Achadinhos IA",
+  "short_name": "Achadinhos",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fff9fb",
+  "theme_color": "#c93b73",
+  "description": "Aplicativo de ofertas e achadinhos.",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

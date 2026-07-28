@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#c93b73">
+  <meta name="description" content="Achadinhos IA: ofertas selecionadas de beleza, casa, moda e eletrônicos.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>Achadinhos IA</title>
+</head>
+<body>
+  <header class="hero">
+    <div class="topbar">
+      <div class="brand">
+        <img src="icon.svg" alt="" class="logo">
+        <div>
+          <strong>Achadinhos IA</strong>
+          <small>ofertas que valem a pena</small>
+        </div>
+      </div>
+      <button id="installBtn" class="install hidden">Instalar app</button>
+    </div>
+
+    <div class="hero-copy">
+      <span class="badge">✨ Seleção inteligente de ofertas</span>
+      <h1>Encontre seu próximo achadinho</h1>
+      <p>Produtos de beleza, casa, moda e tecnologia com links rápidos para compra.</p>
+    </div>
+
+    <div class="search-wrap">
+      <span>🔎</span>
+      <input id="searchInput" type="search" placeholder="Buscar produto, categoria ou loja...">
+    </div>
+  </header>
+
+  <main>
+    <section class="stats">
+      <div><strong id="productCount">0</strong><span>ofertas</span></div>
+      <div><strong id="favoriteCount">0</strong><span>favoritos</span></div>
+      <div><strong>100%</strong><span>gratuito</span></div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <h2>Categorias</h2>
+        <button id="showFavorites" class="link-btn">♡ Meus favoritos</button>
+      </div>
+      <div id="categoryList" class="chips"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <div>
+          <h2 id="listTitle">Ofertas em destaque</h2>
+          <p id="resultText">Carregando produtos...</p>
+        </div>
+        <select id="sortSelect" aria-label="Ordenar produtos">
+          <option value="featured">Destaques</option>
+          <option value="lowest">Menor preço</option>
+          <option value="discount">Maior desconto</option>
+        </select>
+      </div>
+      <div id="productGrid" class="product-grid"></div>
+    </section>
+
+    <section class="newsletter">
+      <div>
+        <span class="badge">📲 Promoções no WhatsApp</span>
+        <h2>Receba novos achadinhos</h2>
+        <p>O botão abre uma conversa para a pessoa pedir as promoções.</p>
+      </div>
+      <a id="whatsappButton" class="primary-btn" target="_blank" rel="noopener">Quero receber ofertas</a>
+    </section>
+
+    <section class="notice">
+      <strong>Transparência:</strong> alguns links podem gerar comissão para a criadora do site, sem custo adicional para o comprador.
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <button data-view="home" class="nav-item active">🏠<span>Início</span></button>
+    <button data-view="favorites" class="nav-item">♡<span>Favoritos</span></button>
+    <button data-view="share" class="nav-item">↗<span>Compartilhar</span></button>
+  </nav>
+
+  <div id="toast" class="toast"></div>
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
