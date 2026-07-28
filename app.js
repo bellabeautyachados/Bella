@@ -75,7 +75,7 @@ function toggleFavorite(id){
 
 function shareProduct(id){
   const p = PRODUCTS.find(x => x.id === id);
-  const message = `Olha este achadinho: ${p.name} por ${formatBRL(p.price)} - ${p.link}`;
+  const message = "Conheça a BELLA e descubra ofertas e achadinhos selecionados para você!"; ${p.name} por ${formatBRL(p.price)} - ${p.link}`;
   window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, "_blank");
 }
 
@@ -152,7 +152,7 @@ document.querySelectorAll(".nav-item").forEach(btn => {
       window.scrollTo({top: 0, behavior: "smooth"});
     }
     if(view === "share"){
-      const message = "Conheça o Achadinhos IA e veja ofertas selecionadas!";
+      const message = "Conheça a BELLA e descubra ofertas e achadinhos selecionados para você!";
       window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, "_blank");
     }
   });
@@ -160,7 +160,7 @@ document.querySelectorAll(".nav-item").forEach(btn => {
 
 const whatsappNumber = "5511999999999";
 document.getElementById("whatsappButton").href =
-  `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Olá! Quero receber os achadinhos e promoções.")}`;
+  `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Olá! Quero receber as ofertas e novidades da BELLA.")}`;
 
 window.toggleFavorite = toggleFavorite;
 window.shareProduct = shareProduct;
