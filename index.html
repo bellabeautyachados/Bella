@@ -2,66 +2,208 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
+
   <meta name="theme-color" content="#c93b73">
-  <meta name="description" content="Achadinhos IA: ofertas selecionadas de beleza, casa, moda e eletrônicos.">
+
+  <meta
+    name="description"
+    content="BELLA: ofertas selecionadas de beleza, casa, moda e eletrônicos."
+  >
+
   <link rel="manifest" href="manifest.json">
   <link rel="icon" href="logo.png" type="image/png">
   <link rel="stylesheet" href="style.css">
+
   <title>BELLA</title>
 </head>
 
 <body>
 
-<header class="hero">
+  <header class="hero">
 
-  <div class="topbar">
-    <div class="brand">
-      <img src="logo.png" alt="BELLA" class="logo">
+    <div class="topbar">
+
+      <div class="brand">
+        <img src="logo.png" alt="Logo da BELLA" class="logo">
+
+        <div>
+          <strong>BELLA</strong>
+          <small>ofertas que valem a pena</small>
+        </div>
+      </div>
+
+      <button
+        id="installBtn"
+        class="install hidden"
+        type="button"
+      >
+        Instalar app
+      </button>
+
+    </div>
+
+    <div class="hero-copy">
+
+      <span class="badge">
+        💖 Achadinhos selecionados todos os dias
+      </span>
+
+      <h1>Encontre as melhores ofertas para você</h1>
+
+      <p>
+        Os melhores produtos da Shopee, Amazon e Mercado Livre
+        reunidos em um só lugar.
+      </p>
+
+      <a
+        class="shopee-store-btn"
+        href="https://collshp.com/bellabeauty.b?view=storefront"
+        target="_blank"
+        rel="noopener noreferrer sponsored"
+      >
+        🛍️ Conheça minha vitrine na Shopee
+      </a>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <section class="stats">
 
       <div>
-        <strong>BELLA</strong>
-        <small>ofertas que valem a pena</small>
+        <strong id="productCount">0</strong>
+        <span>ofertas</span>
       </div>
-    </div>
 
-    <button id="installBtn" class="install hidden">
-      Instalar app
-    </button>
-  </div>
+      <div>
+        <strong id="favoriteCount">0</strong>
+        <span>favoritos</span>
+      </div>
 
-  <div class="hero-copy">
+      <div>
+        <strong>100%</strong>
+        <span>gratuito</span>
+      </div>
 
-    <span class="badge">
-      💖 Achadinhos selecionados todos os dias
-    </span>
+    </section>
 
-    <h1>Encontre as melhores ofertas para você</h1>
+    <section class="section">
 
-    <p>
-      Os melhores produtos da Shopee, Amazon e Mercado Livre reunidos em um só lugar.
-    </p>
+      <div class="section-title">
+        <h2>Categorias</h2>
 
-    <a
-      class="shopee-store-btn"
-      href="https://collshp.com/bellabeauty.b?view=storefront"
-      target="_blank"
-      rel="noopener noreferrer sponsored"
+        <button
+          id="showFavorites"
+          class="link-btn"
+          type="button"
+        >
+          ♡ Meus favoritos
+        </button>
+      </div>
+
+      <div id="categoryList" class="chips"></div>
+
+    </section>
+
+    <section class="section">
+
+      <div class="section-title">
+
+        <div>
+          <h2 id="listTitle">Ofertas em destaque</h2>
+          <p id="resultText">Carregando produtos...</p>
+        </div>
+
+        <select
+          id="sortSelect"
+          aria-label="Ordenar produtos"
+        >
+          <option value="featured">Destaques</option>
+          <option value="lowest">Menor preço</option>
+          <option value="discount">Maior desconto</option>
+        </select>
+
+      </div>
+
+      <div id="productGrid" class="product-grid"></div>
+
+    </section>
+
+    <section class="newsletter">
+
+      <div>
+        <span class="badge">
+          📲 Promoções no WhatsApp
+        </span>
+
+        <h2>Receba novos achadinhos</h2>
+
+        <p>
+          Toque no botão para pedir as promoções da BELLA.
+        </p>
+      </div>
+
+      <a
+        id="whatsappButton"
+        class="primary-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Quero receber ofertas
+      </a>
+
+    </section>
+
+    <section class="notice">
+      <strong>Transparência:</strong>
+      alguns links podem gerar comissão para a criadora do site,
+      sem custo adicional para o comprador.
+    </section>
+
+  </main>
+
+  <nav class="bottom-nav">
+
+    <button
+      data-view="home"
+      class="nav-item active"
+      type="button"
     >
-      🛍️ Conheça minha vitrine na Shopee
-    </a>
+      🏠
+      <span>Início</span>
+    </button>
 
-  </div>
+    <button
+      data-view="favorites"
+      class="nav-item"
+      type="button"
+    >
+      ♡
+      <span>Favoritos</span>
+    </button>
 
-</header>
+    <button
+      data-view="share"
+      class="nav-item"
+      type="button"
+    >
+      ↗
+      <span>Compartilhar</span>
+    </button>
 
-<main>
+  </nav>
 
-  <section class="stats">
-    <div>
-      <strong id="productCount">0</strong>
-      <span>ofertas</span>
-    </div>
+  <div id="toast" class="toast"></div>
 
-    <div>
-      <
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
