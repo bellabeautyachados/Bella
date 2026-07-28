@@ -215,3 +215,33 @@ select{border:1px solid var(--border);background:#fff;border-radius:10px;padding
   background: #ffffff;
   text-align: center;
 }
+.mercado-livre-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 570px;
+  margin-top: 14px;
+  padding: 17px 22px;
+  border-radius: 20px;
+  background: #ffe600;
+  color: #2d3277;
+  font-size: 17px;
+  font-weight: 800;
+  text-decoration: none;
+  border: 2px solid #ffd100;
+  box-shadow: 0 10px 24px rgba(255, 230, 0, 0.30);
+  transition: all .25s ease;
+}
+
+.mercado-livre-btn:hover {
+  transform: translateY(-2px);
+  background: #ffd100;
+  box-shadow: 0 14px 30px rgba(255, 230, 0, 0.40);
+}
+
+.mercado-livre-btn::before {
+  content: "🛒";
+  margin-right: 10px;
+  font-size: 20px;
+}
