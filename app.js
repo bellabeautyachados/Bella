@@ -75,7 +75,7 @@ function toggleFavorite(id){
 
 function shareProduct(id){
   const p = PRODUCTS.find(x => x.id === id);
-  const message = "Conheça a BELLA e descubra ofertas e achadinhos selecionados para você!"; ${p.name} por ${formatBRL(p.price)} - ${p.link}`;
+  const message = `Olha este achadinho da BELLA: ${p.name} por ${formatBRL(p.price)} - ${p.link}`;
   window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, "_blank");
 }
 
