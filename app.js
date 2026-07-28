@@ -93,7 +93,11 @@ function renderProducts(){
   grid.innerHTML = items.map(p => `
     <article class="card">
       <div class="card-media">
-  <img src="${p.image}" alt="${p.name}">
+  ${
+    p.image
+      ? `<img src="${p.image}" alt="${p.name}" loading="lazy">`
+      : `<span class="product-emoji">${p.emoji || "🛍️"}</span>`
+  }
 </div>
       <div class="card-body">
         <div class="card-top">
