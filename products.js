@@ -8,31 +8,31 @@ const PRODUCTS = [
     oldPrice: 89.90,
     price: 59.90,
     image: "images/base-boca-rosa.png",
-    link: "COLE_AQUI_SEU_LINK_DE_AFILIADA",
+    link: "https://collshp.com/bellabeauty.b?view=storefront",
     featured: 10
   },
   {
     id: 2,
     name: "Escova secadora 3 em 1",
     category: "Beleza",
-    store: "TikTok Shop",
+    store: "Shopee",
     description: "Seca, alisa e modela o cabelo com praticidade.",
     oldPrice: 199.90,
     price: 129.90,
     emoji: "✨",
-    link: "https://exemplo.com/cole-seu-link-2",
+    link: "https://collshp.com/bellabeauty.b?view=storefront",
     featured: 9
   },
   {
     id: 3,
     name: "Kit de potes herméticos",
     category: "Casa",
-    store: "Mercado Livre",
+    store: "Shopee",
     description: "Ajuda a conservar alimentos e organizar a cozinha.",
     oldPrice: 129.90,
     price: 74.90,
     emoji: "🏠",
-    link: "https://exemplo.com/cole-seu-link-3",
+    link: "https://collshp.com/bellabeauty.b?view=storefront",
     featured: 8
   },
   {
@@ -44,7 +44,7 @@ const PRODUCTS = [
     oldPrice: 89.90,
     price: 54.90,
     emoji: "💡",
-    link: "https://exemplo.com/cole-seu-link-4",
+    link: "https://collshp.com/bellabeauty.b?view=storefront",
     featured: 7
   },
   {
@@ -56,31 +56,31 @@ const PRODUCTS = [
     oldPrice: 99.90,
     price: 59.90,
     emoji: "👜",
-    link: "https://exemplo.com/cole-seu-link-5",
+    link: "https://collshp.com/bellabeauty.b?view=storefront",
     featured: 6
   },
   {
     id: 6,
     name: "Fone Bluetooth sem fio",
     category: "Eletrônicos",
-    store: "Mercado Livre",
+    store: "Shopee",
     description: "Para chamadas, músicas e exercícios.",
     oldPrice: 149.90,
     price: 79.90,
     emoji: "🎧",
-    link: "https://exemplo.com/cole-seu-link-6",
+    link: "https://collshp.com/bellabeauty.b?view=storefront",
     featured: 5
   },
   {
     id: 7,
     name: "Suporte articulado para celular",
     category: "Eletrônicos",
-    store: "TikTok Shop",
+    store: "Shopee",
     description: "Apoio prático para gravar vídeos ou assistir conteúdos.",
     oldPrice: 59.90,
     price: 29.90,
     emoji: "📱",
-    link: "https://exemplo.com/cole-seu-link-7",
+    link: "https://collshp.com/bellabeauty.b?view=storefront",
     featured: 4
   },
   {
@@ -92,7 +92,7 @@ const PRODUCTS = [
     oldPrice: 159.90,
     price: 99.90,
     emoji: "👟",
-    link: "https://exemplo.com/cole-seu-link-8",
+    link: "https://collshp.com/bellabeauty.b?view=storefront",
     featured: 3
   }
-];
+];    
