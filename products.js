@@ -59,64 +59,63 @@ const PRODUCTS = [
     link: "https://s.shopee.com.br/Lm0Q7l0gl",
     featured: 96
   }
-];
-    id: 6,
-    name: "Achadinhos de cozinha",
-    category: "Cozinha",
-    store: "Mercado Livre",
-    description: "Produtos para cozinhar e organizar com praticidade.",
-    oldPrice: null,
-    price: null,
-    emoji: "🍽️",
-    link: "https://www.mercadolivre.com.br/social/achadinhosrcp",
-    featured: 5
-  },
-  {
-    id: 7,
-    name: "Moda feminina na Shopee",
-    category: "Moda",
-    store: "Shopee",
-    description: "Roupas, bolsas, calçados e acessórios selecionados.",
-    oldPrice: null,
-    price: null,
-    emoji: "👗",
-    link: "https://collshp.com/bellabeauty.b",
-    featured: 4
-  },
-  {
-    id: 8,
-    name: "Achadinhos de moda",
-    category: "Moda",
-    store: "Mercado Livre",
-    description: "Peças e acessórios para diferentes estilos.",
-    oldPrice: null,
-    price: null,
-    emoji: "👜",
-    link: "https://www.mercadolivre.com.br/social/achadinhosrcp",
-    featured: 3
-  },
-  {
-    id: 9,
-    name: "Produtos para organização",
-    category: "Organização",
-    store: "Shopee",
-    description: "Organizadores para casa, cozinha, banheiro e escritório.",
-    oldPrice: null,
-    price: null,
-    emoji: "🗂️",
-    link: "https://collshp.com/bellabeauty.b",
-    featured: 2
-  },
-  {
-    id: 10,
-    name: "Organização no Mercado Livre",
-    category: "Organização",
-    store: "Mercado Livre",
-    description: "Soluções práticas para manter tudo no lugar.",
-    oldPrice: null,
-    price: null,
-    emoji: "🧺",
-    link: "https://www.mercadolivre.com.br/social/achadinhosrcp",
-    featured: 1
-  }
-];
+{
+  id: 6,
+  name: "Kit Principia Skincare Pele Sensível + Protetor Solar FPS 60",
+  category: "Beleza",
+  store: "Mercado Livre",
+  description: "Kit completo para rotina de cuidados com a pele sensível, incluindo protetor solar FPS 60.",
+  oldPrice: null,
+  price: null,
+  emoji: "🧴",
+  link: "https://meli.la/2jMMLJe",
+  featured: 95
+},
+{
+  id: 7,
+  name: "Creatina Monohidratada Pura Dark Lab 1kg",
+  category: "Suplementos",
+  store: "Mercado Livre",
+  description: "Creatina monohidratada pura para auxiliar no desempenho e recuperação muscular.",
+  oldPrice: null,
+  price: null,
+  emoji: "💪",
+  link: "https://meli.la/1ZdaUuv",
+  featured: 94
+},
+{
+  id: 8,
+  name: "Jogo de Toalhas Karsten 100% Algodão 4 Peças",
+  category: "Casa",
+  store: "Mercado Livre",
+  description: "Jogo de toalhas macias e absorventes em 100% algodão.",
+  oldPrice: null,
+  price: null,
+  emoji: "🛁",
+  link: "https://meli.la/18BxaKc",
+  featured: 93
+},
+{
+  id: 9,
+  name: "Kit 3 Organizadores para Geladeira com Tampa",
+  category: "Organização",
+  store: "Mercado Livre",
+  description: "Organize frutas, legumes e outros alimentos na geladeira de forma prática.",
+  oldPrice: null,
+  price: null,
+  emoji: "🥬",
+  link: "https://meli.la/22SN2bo",
+  featured: 92
+},
+{
+  id: 10,
+  name: "Jogo de Lençol Queen 400 Fios 3 Peças",
+  category: "Casa",
+  store: "Mercado Livre",
+  description: "Jogo de lençol Queen com elástico, toque macio e acabamento estilo hotel.",
+  oldPrice: null,
+ price: null,
+ emoji: "🛏️",
+ link: "https://meli.la/2eEXmSg",
+ featured: 91
+}
