@@ -7,7 +7,7 @@ const PRODUCTS = [
     description: "Fragrância corporal leve para usar no dia a dia.",
     oldPrice: null,
     price: null,
-    emoji: "🌸",
+    image: "images/produto-01-body-splash.jpg",
     link: "https://s.shopee.com.br/20uEP3Q1UA",
     featured: 100
   },
@@ -19,7 +19,7 @@ const PRODUCTS = [
     description: "Kit para limpeza, hidratação e cuidados com a pele durante o banho.",
     oldPrice: null,
     price: null,
-    emoji: "🧴",
+    image: "images/produto-02-kit-nivea.jpg",
     link: "https://s.shopee.com.br/5LAgNFgW22",
     featured: 99
   },
@@ -31,7 +31,7 @@ const PRODUCTS = [
     description: "Kit com base líquida, pó, máscara de cílios e corretivo.",
     oldPrice: 100.00,
     price: 51.78,
-    emoji: "💄",
+    image: "images/produto-03-kit-boca-rosa.jpg",
     link: "https://s.shopee.com.br/7fYb9Yg1oX",
     featured: 98
   },
@@ -43,7 +43,7 @@ const PRODUCTS = [
     description: "Ampola facial para ajudar na luminosidade e uniformização da pele.",
     oldPrice: 127.95,
     price: 43.98,
-    emoji: "✨",
+    image: "images/produto-04-serum-skin1004.jpg",
     link: "https://s.shopee.com.br/3Vj2Bv8tMm",
     featured: 97
   },
@@ -55,7 +55,7 @@ const PRODUCTS = [
     description: "Linha de cuidados capilares para nutrição, brilho e maciez.",
     oldPrice: 47.90,
     price: 44.90,
-    emoji: "💇‍♀️",
+    image: "images/produto-05-kit-elseve.jpg",
     link: "https://s.shopee.com.br/Lm0Q7l0gl",
     featured: 96
   },
@@ -67,7 +67,7 @@ const PRODUCTS = [
     description: "Kit completo para rotina de cuidados com a pele sensível, incluindo protetor solar FPS 60.",
     oldPrice: null,
     price: null,
-    emoji: "🧴",
+    image: "images/produto-06-kit-principia.jpg",
     link: "https://meli.la/2jMMLJe",
     featured: 95
   },
@@ -79,7 +79,7 @@ const PRODUCTS = [
     description: "Creatina monohidratada pura, sem sabor, para auxiliar no desempenho e recuperação muscular.",
     oldPrice: null,
     price: null,
-    emoji: "💪",
+    image: "images/produto-07-creatina-dark-lab.jpg",
     link: "https://meli.la/1ZdaUuv",
     featured: 94
   },
@@ -91,7 +91,7 @@ const PRODUCTS = [
     description: "Jogo de toalhas macias e absorventes em 100% algodão.",
     oldPrice: null,
     price: null,
-    emoji: "🛁",
+    image: "images/produto-08-toalhas-karsten.jpg",
     link: "https://meli.la/18BxaKc",
     featured: 93
   },
@@ -103,7 +103,7 @@ const PRODUCTS = [
     description: "Organizadores para armazenar frutas, legumes e outros alimentos na geladeira.",
     oldPrice: null,
     price: null,
-    emoji: "🥬",
+    image: "images/produto-09-organizadores-geladeira.jpg",
     link: "https://meli.la/22SN2bo",
     featured: 92
   },
@@ -115,7 +115,7 @@ const PRODUCTS = [
     description: "Jogo de lençol Queen com elástico, toque macio e acabamento rose poá.",
     oldPrice: null,
     price: null,
-    emoji: "🛏️",
+    image: "images/produto-10-lencol-queen.jpg",
     link: "https://meli.la/2eEXmSg",
     featured: 91
   }
