@@ -1,4 +1,4 @@
-const CACHE_NAME = "bella-v24";
+const CACHE_NAME = "bella-v25";
 
 const FILES_TO_CACHE = [
   "./",
