@@ -313,14 +313,11 @@ function renderProducts() {
             class="product-emoji"
             style="display:none"
           >
-            ${product.emoji || "🛍️"}
-          </span>
-        `
-        : `
-          <span class="product-emoji">
-            ${product.emoji || "🛍️"}
-          </span>
-        `;
+           ${
+            product.image
+              ? `<img src="${product.image}" alt="${product.name}" class="product-image">`
+              : `<span class="product-emoji">${product.emoji || "🛍️"}</span>`
+}
 
       const pricesHtml = hasValidPrice(product.price)
         ? `
