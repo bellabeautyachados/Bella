@@ -9,6 +9,7 @@ const PRODUCTS = [
     price: null,
     image: "images/produto-01-body-splash.jpg",
     link: "https://s.shopee.com.br/20uEP3Q1UA",
+    badge: "Mais vendido",
     featured: 100
   },
   {
@@ -21,6 +22,7 @@ const PRODUCTS = [
     price: null,
     image: "images/produto-02-kit-nivea.jpg",
     link: "https://s.shopee.com.br/5LAgNFgW22",
+    badge: "Oferta",
     featured: 99
   },
   {
@@ -33,6 +35,7 @@ const PRODUCTS = [
     price: 51.78,
     image: "images/produto-03-kit-boca-rosa.jpg",
     link: "https://s.shopee.com.br/7fYb9Yg1oX",
+    badge: "Escolha da Bella",
     featured: 98
   },
   {
@@ -45,6 +48,7 @@ const PRODUCTS = [
     price: 43.98,
     image: "images/produto-04-serum-skin1004.jpg",
     link: "https://s.shopee.com.br/3Vj2Bv8tMm",
+    badge: "Novidade",
     featured: 97
   },
   {
@@ -57,6 +61,7 @@ const PRODUCTS = [
     price: 44.90,
     image: "images/produto-05-kit-elseve.jpg",
     link: "https://s.shopee.com.br/Lm0Q7l0gl",
+    badge: "Oferta",
     featured: 96
   },
   {
@@ -69,18 +74,20 @@ const PRODUCTS = [
     price: null,
     image: "images/produto-06-kit-principia.jpg",
     link: "https://meli.la/2jMMLJe",
+    badge: "Escolha da Bella",
     featured: 95
   },
   {
     id: 7,
     name: "Creatina Monohidratada Pura Dark Lab 1kg",
-    category: "Beleza",
+    category: "Fitness",
     store: "Mercado Livre",
     description: "Creatina monohidratada pura, sem sabor, para auxiliar no desempenho e recuperação muscular.",
     oldPrice: null,
     price: null,
     image: "images/produto-07-creatina-dark-lab.jpg",
     link: "https://meli.la/1ZdaUuv",
+    badge: "Mais vendido",
     featured: 94
   },
   {
@@ -93,6 +100,7 @@ const PRODUCTS = [
     price: null,
     image: "images/produto-08-toalhas-karsten.jpg",
     link: "https://meli.la/18BxaKc",
+    badge: "Novidade",
     featured: 93
   },
   {
@@ -105,6 +113,7 @@ const PRODUCTS = [
     price: null,
     image: "images/produto-09-organizadores-geladeira.jpg",
     link: "https://meli.la/22SN2bo",
+    badge: "Oferta",
     featured: 92
   },
   {
@@ -117,6 +126,7 @@ const PRODUCTS = [
     price: null,
     image: "images/produto-10-lencol-queen.jpg",
     link: "https://meli.la/2eEXmSg",
+    badge: "Mais vendido",
     featured: 91
   }
 ];
