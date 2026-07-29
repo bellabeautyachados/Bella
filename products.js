@@ -1,65 +1,65 @@
 const PRODUCTS = [
   {
     id: 1,
-    name: "Achadinhos de beleza na Shopee",
+    name: "Body Splash 200ml O Boticário",
     category: "Beleza",
     store: "Shopee",
-    description: "Maquiagem, cuidados pessoais e acessórios selecionados.",
+    description: "Fragrância corporal leve para usar no dia a dia.",
     oldPrice: null,
     price: null,
-    emoji: "💄",
-    link: "https://collshp.com/bellabeauty.b",
-    featured: 10
+    emoji: "🌸",
+    link: "https://s.shopee.com.br/20uEP3Q1UA",
+    featured: 100
   },
   {
     id: 2,
-    name: "Beleza no Mercado Livre",
+    name: "Kit Nivea Óleo de Banho + Esfoliante",
     category: "Beleza",
-    store: "Mercado Livre",
-    description: "Produtos de beleza e cuidados pessoais em destaque.",
+    store: "Shopee",
+    description: "Kit para limpeza, hidratação e cuidados com a pele durante o banho.",
     oldPrice: null,
     price: null,
-    emoji: "✨",
-    link: "https://www.mercadolivre.com.br/social/achadinhosrcp",
-    featured: 9
+    emoji: "🧴",
+    link: "https://s.shopee.com.br/5LAgNFgW22",
+    featured: 99
   },
   {
     id: 3,
-    name: "Achadinhos para casa",
-    category: "Casa",
+    name: "Kit Boca Rosa com 4 Produtos",
+    category: "Beleza",
     store: "Shopee",
-    description: "Produtos úteis e bonitos para facilitar sua rotina.",
-    oldPrice: null,
-    price: null,
-    emoji: "🏠",
-    link: "https://collshp.com/bellabeauty.b",
-    featured: 8
+    description: "Kit com base líquida, pó, máscara de cílios e corretivo.",
+    oldPrice: 100.00,
+    price: 51.78,
+    emoji: "💄",
+    link: "https://s.shopee.com.br/7fYb9Yg1oX",
+    featured: 98
   },
   {
     id: 4,
-    name: "Ofertas para casa",
-    category: "Casa",
-    store: "Mercado Livre",
-    description: "Itens selecionados para deixar sua casa mais prática.",
-    oldPrice: null,
-    price: null,
-    emoji: "🛋️",
-    link: "https://www.mercadolivre.com.br/social/achadinhosrcp",
-    featured: 7
+    name: "Sérum Facial SKIN1004 Madagascar",
+    category: "Beleza",
+    store: "Shopee",
+    description: "Ampola facial para ajudar na luminosidade e uniformização da pele.",
+    oldPrice: 127.95,
+    price: 43.98,
+    emoji: "✨",
+    link: "https://s.shopee.com.br/3Vj2Bv8tMm",
+    featured: 97
   },
   {
     id: 5,
-    name: "Utilidades para cozinha",
-    category: "Cozinha",
+    name: "Kit L'Oréal Elseve Óleo Extraordinário",
+    category: "Beleza",
     store: "Shopee",
-    description: "Utensílios, acessórios e produtos para sua cozinha.",
-    oldPrice: null,
-    price: null,
-    emoji: "🍳",
-    link: "https://collshp.com/bellabeauty.b",
-    featured: 6
-  },
-  {
+    description: "Linha de cuidados capilares para nutrição, brilho e maciez.",
+    oldPrice: 47.90,
+    price: 44.90,
+    emoji: "💇‍♀️",
+    link: "https://s.shopee.com.br/Lm0Q7l0gl",
+    featured: 96
+  }
+];
     id: 6,
     name: "Achadinhos de cozinha",
     category: "Cozinha",
