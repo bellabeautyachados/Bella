@@ -298,27 +298,30 @@ function renderProducts() {
         state.favorites.includes(product.id);
 
       const media = product.image
-        ? `
-          <img
-            src="${product.image}"
-            alt="${product.name}"
-            loading="lazy"
-            onerror="
-              this.style.display='none';
-              this.nextElementSibling.style.display='flex';
-            "
-          >
+  ? `
+    <img
+      src="${product.image}"
+      alt="${product.name}"
+      class="product-image"
+      loading="lazy"
+      onerror="
+        this.style.display='none';
+        this.nextElementSibling.style.display='flex';
+      "
+    >
 
-          <span
-            class="product-emoji"
-            style="display:none"
-          >
-           ${
-            product.image
-              ? `<img src="${product.image}" alt="${product.name}" class="product-image">`
-              : `<span class="product-emoji">${product.emoji || "🛍️"}</span>`
-}
-
+    <span
+      class="product-emoji"
+      style="display:none"
+    >
+      ${product.emoji || "🛍️"}
+    </span>
+  `
+  : `
+    <span class="product-emoji">
+      ${product.emoji || "🛍️"}
+    </span>
+  `;
       const pricesHtml = hasValidPrice(product.price)
         ? `
           <div class="prices">
