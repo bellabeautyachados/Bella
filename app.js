@@ -1,4 +1,4 @@
-    const state = {
+const state = {
   category: "Todos",
   favoritesOnly: false,
   sort: "featured",
@@ -16,10 +16,22 @@ const favoriteCount = document.getElementById("favoriteCount");
 const productCount = document.getElementById("productCount");
 const toast = document.getElementById("toast");
 const installBtn = document.getElementById("installBtn");
-const whatsappButton = document.getElementById("whatsappButton");
 const showFavoritesButton = document.getElementById("showFavorites");
 
+function hasValidPrice(value) {
+  return (
+    value !== null &&
+    value !== undefined &&
+    value !== "" &&
+    Number(value) > 0
+  );
+}
+
 function formatBRL(value) {
+  if (!hasValidPrice(value)) {
+    return "";
+  }
+
   return Number(value).toLocaleString("pt-BR", {
     style: "currency",
     currency: "BRL"
@@ -28,14 +40,15 @@ function formatBRL(value) {
 
 function calculateDiscount(product) {
   if (
-    !product.oldPrice ||
-    product.oldPrice <= product.price
+    !hasValidPrice(product.oldPrice) ||
+    !hasValidPrice(product.price) ||
+    Number(product.oldPrice) <= Number(product.price)
   ) {
     return 0;
   }
 
   return Math.round(
-    (1 - product.price / product.oldPrice) * 100
+    (1 - Number(product.price) / Number(product.oldPrice)) * 100
   );
 }
 
@@ -80,7 +93,7 @@ function setActiveNavigation(view) {
 }
 
 function renderCategories() {
-  if (!categoryList) {
+  if (!categoryList || !Array.isArray(PRODUCTS)) {
     return;
   }
 
@@ -123,7 +136,11 @@ function renderCategories() {
 }
 
 function getFilteredProducts() {
-  let items = PRODUCTS.filter(product => {
+  if (!Array.isArray(PRODUCTS)) {
+    return [];
+  }
+
+  const items = PRODUCTS.filter(product => {
     const categoryMatches =
       state.category === "Todos" ||
       product.category === state.category;
@@ -136,7 +153,17 @@ function getFilteredProducts() {
   });
 
   if (state.sort === "lowest") {
-    items.sort((a, b) => a.price - b.price);
+    items.sort((a, b) => {
+      const priceA = hasValidPrice(a.price)
+        ? Number(a.price)
+        : Number.MAX_SAFE_INTEGER;
+
+      const priceB = hasValidPrice(b.price)
+        ? Number(b.price)
+        : Number.MAX_SAFE_INTEGER;
+
+      return priceA - priceB;
+    });
   }
 
   if (state.sort === "discount") {
@@ -183,15 +210,43 @@ function shareProduct(id) {
     return;
   }
 
+  const priceText = hasValidPrice(product.price)
+    ? ` por ${formatBRL(product.price)}`
+    : "";
+
   const message =
     `Olha este achadinho da BELLA: ` +
-    `${product.name} por ${formatBRL(product.price)}. ` +
+    `${product.name}${priceText}. ` +
     `${product.link}`;
 
   window.open(
     `https://wa.me/?text=${encodeURIComponent(message)}`,
     "_blank"
   );
+}
+
+function getStoreButtonText(store) {
+  if (store === "Shopee") {
+    return "Ver na Shopee";
+  }
+
+  if (store === "Mercado Livre") {
+    return "Ver no Mercado Livre";
+  }
+
+  return "Ver achadinhos";
+}
+
+function getStoreClass(store) {
+  if (store === "Shopee") {
+    return "buy-btn shopee-buy";
+  }
+
+  if (store === "Mercado Livre") {
+    return "buy-btn mercado-livre-buy";
+  }
+
+  return "buy-btn";
 }
 
 function renderProducts() {
@@ -202,7 +257,9 @@ function renderProducts() {
   const items = getFilteredProducts();
 
   if (productCount) {
-    productCount.textContent = PRODUCTS.length;
+    productCount.textContent = Array.isArray(PRODUCTS)
+      ? PRODUCTS.length
+      : 0;
   }
 
   if (favoriteCount) {
@@ -210,20 +267,24 @@ function renderProducts() {
   }
 
   if (listTitle) {
-    listTitle.textContent = state.favoritesOnly
-      ? "Meus favoritos"
-      : "Ofertas em destaque";
+    if (state.favoritesOnly) {
+      listTitle.textContent = "Meus favoritos";
+    } else if (state.category !== "Todos") {
+      listTitle.textContent = `Achadinhos de ${state.category}`;
+    } else {
+      listTitle.textContent = "Achadinhos em destaque";
+    }
   }
 
   if (resultText) {
     resultText.textContent =
-      `${items.length} produto(s) encontrado(s)`;
+      `${items.length} opção(ões) encontrada(s)`;
   }
 
   if (items.length === 0) {
     grid.innerHTML = `
       <div class="empty">
-        Nenhum produto encontrado.
+        Nenhum achadinho encontrado.
       </div>
     `;
 
@@ -242,7 +303,10 @@ function renderProducts() {
             src="${product.image}"
             alt="${product.name}"
             loading="lazy"
-            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            onerror="
+              this.style.display='none';
+              this.nextElementSibling.style.display='flex';
+            "
           >
 
           <span
@@ -256,6 +320,44 @@ function renderProducts() {
           <span class="product-emoji">
             ${product.emoji || "🛍️"}
           </span>
+        `;
+
+      const pricesHtml = hasValidPrice(product.price)
+        ? `
+          <div class="prices">
+
+            ${
+              hasValidPrice(product.oldPrice)
+                ? `
+                  <span class="old-price">
+                    ${formatBRL(product.oldPrice)}
+                  </span>
+                `
+                : ""
+            }
+
+            <span class="current-price">
+              ${formatBRL(product.price)}
+            </span>
+
+            ${
+              discount > 0
+                ? `
+                  <span class="discount">
+                    ${discount}% de desconto
+                  </span>
+                `
+                : ""
+            }
+
+          </div>
+        `
+        : `
+          <div class="prices">
+            <span class="current-price">
+              Confira as ofertas
+            </span>
+          </div>
         `;
 
       return `
@@ -287,40 +389,20 @@ function renderProducts() {
             <h3>${product.name}</h3>
 
             <p class="card-desc">
-              ${product.description}
+              ${product.description || ""}
             </p>
 
-            <div class="prices">
-
-              <span class="old-price">
-                ${formatBRL(product.oldPrice)}
-              </span>
-
-              <span class="current-price">
-                ${formatBRL(product.price)}
-              </span>
-
-              ${
-                discount > 0
-                  ? `
-                    <span class="discount">
-                      ${discount}% de desconto
-                    </span>
-                  `
-                  : ""
-              }
-
-            </div>
+            ${pricesHtml}
 
             <div class="card-actions">
 
               <a
-                class="buy-btn"
+                class="${getStoreClass(product.store)}"
                 href="${product.link}"
                 target="_blank"
                 rel="noopener noreferrer sponsored"
               >
-                Ver oferta
+                ${getStoreButtonText(product.store)}
               </a>
 
               <button
@@ -358,6 +440,7 @@ if (sortSelect) {
 if (showFavoritesButton) {
   showFavoritesButton.addEventListener("click", () => {
     state.favoritesOnly = true;
+
     setActiveNavigation("favorites");
     render();
   });
@@ -399,8 +482,8 @@ document
           "https://bellabeautyachados.github.io/Bella/";
 
         const message =
-          `Conheça a BELLA e descubra ofertas e ` +
-          `achadinhos selecionados para você! ${siteLink}`;
+          `Conheça a BELLA e encontre achadinhos ` +
+          `da Shopee e do Mercado Livre: ${siteLink}`;
 
         window.open(
           `https://wa.me/?text=${encodeURIComponent(message)}`,
@@ -409,17 +492,6 @@ document
       }
     });
   });
-
-const whatsappNumber = "5511999999999";
-
-if (whatsappButton) {
-  const message =
-    "Olá! Quero receber as ofertas e novidades da BELLA.";
-
-  whatsappButton.href =
-    `https://wa.me/${whatsappNumber}` +
-    `?text=${encodeURIComponent(message)}`;
-}
 
 window.toggleFavorite = toggleFavorite;
 window.shareProduct = shareProduct;
@@ -468,4 +540,4 @@ if ("serviceWorker" in navigator) {
   });
 }
 
-render();         
+render();
