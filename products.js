@@ -128,5 +128,83 @@ const PRODUCTS = [
     link: "https://meli.la/2eEXmSg",
     badge: "Mais vendido",
     featured: 91
+  },
+  {
+    id: 11,
+    name: "Pipoqueira de Silicone 2,5L para Micro-ondas",
+    category: "Cozinha",
+    store: "Mercado Livre",
+    description: "Pipoqueira reutilizável para preparar pipoca no micro-ondas com praticidade.",
+    oldPrice: null,
+    price: 30.79,
+    image: "images/produto-11-pipoqueira.jpg",
+    link: "https://meli.la/15gNvFR",
+    badge: "Escolha da Bella",
+    featured: 90
+  },
+  {
+    id: 12,
+    name: "Espelho Orgânico Corpo Inteiro 90x40cm",
+    category: "Casa",
+    store: "Mercado Livre",
+    description: "Espelho decorativo moderno para quarto, closet, sala ou hall de entrada.",
+    oldPrice: 129.90,
+    price: 78.99,
+    image: "images/produto-12-espelho.jpg",
+    link: "https://meli.la/177urJw",
+    badge: "Oferta",
+    featured: 89
+  },
+  {
+    id: 13,
+    name: "Jogo de Facas Tramontina Plenus 7 Peças",
+    category: "Cozinha",
+    store: "Mercado Livre",
+    description: "Conjunto de facas Tramontina em aço inox para diferentes preparos.",
+    oldPrice: 58.20,
+    price: 43.20,
+    image: "images/produto-13-facas.jpg",
+    link: "https://meli.la/1nssE2E",
+    badge: "Mais vendido",
+    featured: 88
+  },
+  {
+    id: 14,
+    name: "Kit com 8 Rodinhas de Silicone para Móveis",
+    category: "Organização",
+    store: "Mercado Livre",
+    description: "Rodízios reforçados com trava, placa e freio para móveis e bancadas.",
+    oldPrice: 29.99,
+    price: 28.49,
+    image: "images/produto-14-rodinhas.jpg",
+    link: "https://meli.la/2y6SbPp",
+    badge: "Novidade",
+    featured: 87
+  },
+  {
+    id: 15,
+    name: "Sofá Beny Living 2 Lugares com Almofadas",
+    category: "Casa",
+    store: "Mercado Livre",
+    description: "Sofá moderno de dois lugares para sala, recepção, clínica ou escritório.",
+    oldPrice: 850.00,
+    price: 765.00,
+    image: "images/produto-15-sofa.jpg",
+    link: "https://meli.la/2UPN6CJ",
+    badge: "Escolha da Bella",
+    featured: 86
+  },
+  {
+    id: 16,
+    name: "Triturador Manual de Alimentos",
+    category: "Cozinha",
+    store: "Mercado Livre",
+    description: "Triturador manual para desfiar carne, frango e preparar diferentes alimentos.",
+    oldPrice: null,
+    price: 24.50,
+    image: "images/produto-16-triturador.jpg",
+    link: "https://meli.la/1Aaz5De",
+    badge: "Oferta",
+    featured: 85
   }
 ];
