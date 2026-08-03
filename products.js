@@ -350,4 +350,4 @@ const PRODUCTS = [
   badge: "Mais vendido",
   featured: 74
 }
-
+];  
