@@ -337,7 +337,7 @@ const PRODUCTS = [
   badge: "Novidade",
   featured: 75
 },
-  {
+ {
   id: 27,
   name: "Ômegafor Plus Ômega 3 120 Cápsulas",
   category: "Fitness",
