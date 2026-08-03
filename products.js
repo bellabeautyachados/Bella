@@ -206,10 +206,8 @@ const PRODUCTS = [
     link: "https://meli.la/1Aaz5De",
     badge: "Oferta",
     featured: 85
-  }
-];
-
-{
+  },
+  {
   id: 17,
   name: "Barra de Proteína Whey Grego Havanna Display 12 Unidades",
   category: "Fitness",
@@ -222,8 +220,7 @@ const PRODUCTS = [
   badge: "Oferta",
   featured: 84
 },
-
-{
+  {
   id: 18,
   name: "Leave-in Elseve Collagen Lifter 100ml",
   category: "Beleza",
@@ -236,8 +233,7 @@ const PRODUCTS = [
   badge: "Novidade",
   featured: 83
 },
-
-{
+  {
   id: 19,
   name: "Top Fitness Feminino com Bojo",
   category: "Moda",
@@ -250,8 +246,7 @@ const PRODUCTS = [
   badge: "Mais vendido",
   featured: 82
 },
-
-{
+  {
   id: 20,
   name: "Loção Hidratante CeraVe 473ml",
   category: "Beleza",
@@ -264,8 +259,7 @@ const PRODUCTS = [
   badge: "Escolha da Bella",
   featured: 81
 },
-
-{
+  {
   id: 21,
   name: "Amaciante Downy Concentrado Brisa de Verão 3L",
   category: "Casa",
@@ -278,8 +272,7 @@ const PRODUCTS = [
   badge: "Oferta",
   featured: 80
 },
-
-{
+  {
   id: 22,
   name: "Assento Sanitário Universal Astra Slim",
   category: "Casa",
@@ -292,8 +285,7 @@ const PRODUCTS = [
   badge: "Mais vendido",
   featured: 79
 },
-
-{
+  {
   id: 23,
   name: "Aparelho de Jantar Tramontina Azzura 20 Peças",
   category: "Casa",
@@ -306,8 +298,7 @@ const PRODUCTS = [
   badge: "Escolha da Bella",
   featured: 78
 },
-
-{
+  {
   id: 24,
   name: "Kit Boleira Decorativa com 5 Peças",
   category: "Casa",
@@ -320,8 +311,7 @@ const PRODUCTS = [
   badge: "Novidade",
   featured: 77
 },
-
-{
+  {
   id: 25,
   name: "Jogo de Jantar Oxford Unni Brisa 20 Peças",
   category: "Casa",
@@ -334,8 +324,7 @@ const PRODUCTS = [
   badge: "Escolha da Bella",
   featured: 76
 },
-
-{
+  {
   id: 26,
   name: "Interruptor Inteligente Wi-Fi Alexa",
   category: "Tecnologia",
@@ -348,8 +337,7 @@ const PRODUCTS = [
   badge: "Novidade",
   featured: 75
 },
-
-{
+  {
   id: 27,
   name: "Ômegafor Plus Ômega 3 120 Cápsulas",
   category: "Fitness",
