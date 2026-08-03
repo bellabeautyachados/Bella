@@ -453,4 +453,5 @@ const PRODUCTS = [
   link: "SEU_LINK_DA_SHOPEE",
   badge: "Escolha da Bella",
   featured: 66
-},  
+}
+];  
