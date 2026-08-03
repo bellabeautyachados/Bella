@@ -349,4 +349,5 @@ const PRODUCTS = [
   link: "https://meli.la/1ZLQbeY",
   badge: "Mais vendido",
   featured: 74
-},
+}
+];
