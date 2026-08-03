@@ -208,3 +208,157 @@ const PRODUCTS = [
     featured: 85
   }
 ];
+
+{
+  id: 17,
+  name: "Barra de Proteína Whey Grego Havanna Display 12 Unidades",
+  category: "Fitness",
+  store: "Mercado Livre",
+  description: "Display com 12 barras de proteína sabor brownie e doce de leite Havanna.",
+  oldPrice: 104.00,
+  price: 67.89,
+  image: "images/produto-17-barra-whey-grego.jpg",
+  link: "https://meli.la/1o2ktth",
+  badge: "Oferta",
+  featured: 84
+},
+
+{
+  id: 18,
+  name: "Leave-in Elseve Collagen Lifter 100ml",
+  category: "Beleza",
+  store: "Mercado Livre",
+  description: "Leave-in para cabelos finos com efeito volume e fortalecimento.",
+  oldPrice: null,
+  price: 32.19,
+  image: "images/produto-18-elseve-collagen.jpg",
+  link: "https://meli.la/1V28XhV",
+  badge: "Novidade",
+  featured: 83
+},
+
+{
+  id: 19,
+  name: "Top Fitness Feminino com Bojo",
+  category: "Moda",
+  store: "Mercado Livre",
+  description: "Top esportivo confortável para academia, caminhada e treino.",
+  oldPrice: 47.97,
+  price: 30.49,
+  image: "images/produto-19-top-fitness.jpg",
+  link: "https://meli.la/1EJBm3R",
+  badge: "Mais vendido",
+  featured: 82
+},
+
+{
+  id: 20,
+  name: "Loção Hidratante CeraVe 473ml",
+  category: "Beleza",
+  store: "Mercado Livre",
+  description: "Hidratante corporal com ceramidas e ácido hialurônico.",
+  oldPrice: 141.90,
+  price: 89.90,
+  image: "images/produto-20-cerave.jpg",
+  link: "https://meli.la/2WdSw8y",
+  badge: "Escolha da Bella",
+  featured: 81
+},
+
+{
+  id: 21,
+  name: "Amaciante Downy Concentrado Brisa de Verão 3L",
+  category: "Casa",
+  store: "Mercado Livre",
+  description: "Amaciante concentrado com perfume duradouro e alto rendimento.",
+  oldPrice: 66.90,
+  price: 45.99,
+  image: "images/produto-21-downy.jpg",
+  link: "https://meli.la/22cRoou",
+  badge: "Oferta",
+  featured: 80
+},
+
+{
+  id: 22,
+  name: "Assento Sanitário Universal Astra Slim",
+  category: "Casa",
+  store: "Mercado Livre",
+  description: "Assento sanitário resistente com design moderno e confortável.",
+  oldPrice: 89.90,
+  price: 58.10,
+  image: "images/produto-22-astra.jpg",
+  link: "https://meli.la/2wdzSX1",
+  badge: "Mais vendido",
+  featured: 79
+},
+
+{
+  id: 23,
+  name: "Aparelho de Jantar Tramontina Azzura 20 Peças",
+  category: "Casa",
+  store: "Mercado Livre",
+  description: "Conjunto em porcelana para deixar sua mesa ainda mais elegante.",
+  oldPrice: null,
+  price: 534.45,
+  image: "images/produto-23-tramontina-azzura.jpg",
+  link: "https://meli.la/2VctFXc",
+  badge: "Escolha da Bella",
+  featured: 78
+},
+
+{
+  id: 24,
+  name: "Kit Boleira Decorativa com 5 Peças",
+  category: "Casa",
+  store: "Mercado Livre",
+  description: "Kit para decoração de festas, doces e bolos.",
+  oldPrice: 99.99,
+  price: 78.11,
+  image: "images/produto-24-kit-boleira.jpg",
+  link: "https://meli.la/1NtydUy",
+  badge: "Novidade",
+  featured: 77
+},
+
+{
+  id: 25,
+  name: "Jogo de Jantar Oxford Unni Brisa 20 Peças",
+  category: "Casa",
+  store: "Mercado Livre",
+  description: "Jogo de jantar em porcelana para uso diário e ocasiões especiais.",
+  oldPrice: 499.90,
+  price: 256.40,
+  image: "images/produto-25-oxford-unni.jpg",
+  link: "https://meli.la/1xQBmpX",
+  badge: "Escolha da Bella",
+  featured: 76
+},
+
+{
+  id: 26,
+  name: "Interruptor Inteligente Wi-Fi Alexa",
+  category: "Tecnologia",
+  store: "Mercado Livre",
+  description: "Interruptor inteligente compatível com Alexa e Google Assistente.",
+  oldPrice: 49.80,
+  price: 34.90,
+  image: "images/produto-26-interruptor-inteligente.jpg",
+  link: "https://meli.la/2cRujon",
+  badge: "Novidade",
+  featured: 75
+},
+
+{
+  id: 27,
+  name: "Ômegafor Plus Ômega 3 120 Cápsulas",
+  category: "Fitness",
+  store: "Mercado Livre",
+  description: "Suplemento de Ômega 3 de alta concentração.",
+  oldPrice: 240.00,
+  price: 118.50,
+  image: "images/produto-27-omegafor.jpg",
+  link: "https://meli.la/1ZLQbeY",
+  badge: "Mais vendido",
+  featured: 74
+},
