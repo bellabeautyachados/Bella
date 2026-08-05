@@ -597,3 +597,4 @@ const PRODUCTS = [
   badge: "Escolha da Bella",
   featured: 55
 }
+];
